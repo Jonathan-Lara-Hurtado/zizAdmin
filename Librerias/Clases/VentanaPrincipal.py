@@ -18,7 +18,7 @@ class VentanaPrincipal(QMainWindow,Ui_VentanaPrincipalBoceto):
 
         self.tray = QSystemTrayIcon(self)
         if self.tray.isSystemTrayAvailable():
-            self.tray.setIcon(QIcon(recurso_path("Recursos/Imagenes/zizIcon.png")))
+            self.tray.setIcon(QIcon(recurso_path("Recursos/Imagenes/zizIconV2.png")))
             
             #contexto Menu
             ctmenu = QMenu()
