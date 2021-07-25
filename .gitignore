@@ -12,3 +12,4 @@ build/main/xref-main.html
 build/main/localpycos/struct.pyo
 dist/main
 __pycache__/main.cpython-38.pyc
+dist/zizAdmin
