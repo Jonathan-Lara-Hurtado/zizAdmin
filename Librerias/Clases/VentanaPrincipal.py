@@ -15,7 +15,7 @@ class VentanaPrincipal(QMainWindow,Ui_VentanaPrincipalBoceto):
         QMainWindow.__init__(self,*args,**kwargs)
         self.setupUi(self)
 
-
+        self.btnZizWeb.clicked.connect(self.eventoZizWeb)
         self.tray = QSystemTrayIcon(self)
         if self.tray.isSystemTrayAvailable():
             self.tray.setIcon(QIcon(recurso_path("Recursos/Imagenes/zizIconV2.png")))
@@ -43,3 +43,6 @@ class VentanaPrincipal(QMainWindow,Ui_VentanaPrincipalBoceto):
         else:
             self.hide()
             event.ignore()
+    
+    def eventoZizWeb(self):
+        print("click")
